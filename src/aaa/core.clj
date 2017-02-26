@@ -31,11 +31,10 @@
 
 
 (defn generate
-  ([] (generate default-path))
-  ([path] (generate path "-"))
-  ([path sep]
-   (->> (for [k path]
+  [& {:keys [path sep]
+      :or {path default-path sep "-"}}]
+  (->> (for [k path]
           (-> (word k)
               string/trim
               string/lower-case))
-        (string/join sep))))
+        (string/join (str sep))))
