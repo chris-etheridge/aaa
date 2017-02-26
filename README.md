@@ -11,7 +11,7 @@ Credits for animal and adjective lists go to:
 - Require it in your name space.
 - Generate:
 
-``clj
+```clj
     (require '[ether/aaa :as aaa])
     
     (aaa/generate)
