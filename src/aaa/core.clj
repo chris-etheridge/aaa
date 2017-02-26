@@ -1,12 +1,11 @@
 (ns aaa.core
   (:require
    [clojure.java.io :as io]
-   [clojure.string :as string]))
+   [clojure.string :as string])
+  (:refer-clojure :exclude [shuffle]))
 
 
 (def animals* (slurp (io/resource "lists/animals.csv")))
-
-
 (def adjectives* (slurp (io/resource "lists/adjectives.csv")))
 
 
@@ -16,15 +15,20 @@
 (def animals (string/split animals* #","))
 
 
-(defn random-word [words]
-  (let [limit (count words)]
-    (nth words (rand-int limit))))
+(defn shuffle
+  "Same as `clojure.core/shuffle` but ensures that the
+   resulting `coll` !== the inputted `coll`."
+  [coll]
+  (let [coll' (shuffle coll)]
+    (if (= coll' coll)
+      (recur coll)
+      coll')))
 
 
 (defn word [k]
   (case k
-    :adjective (random-word adjectives)
-    :animal    (random-word animals)))
+    :adjective (rand-nth (shuffle adjectives))
+    :animal    (rand-nth (shuffle animals))))
 
 
 (def default-path [:adjective :adjective :animal])
