@@ -1,4 +1,4 @@
-# aaw
+# aaa
 
 Adjective-adjective-animal from Clojure.
 
