@@ -1,5 +1,7 @@
 # aaa
 
+[![Clojars Project](https://img.shields.io/clojars/v/ether/aaa.svg)](https://clojars.org/ether/aaa)
+
 Adjective-adjective-animal from Clojure.
 
 Credits for animal and adjective lists go to:
