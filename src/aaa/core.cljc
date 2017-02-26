@@ -26,6 +26,23 @@
 
 
 (defn generate
+  "Generates a string based on a `path` of what type of words
+   to use, and the `sep` to use. 
+
+   Defaults:
+   `:path` -> `[:adjective :adjective :animal]`
+   `:sep`  -> `-`
+
+   Examples:
+
+   `(generate)`
+   => \"wellborn-microbiologic-binturong\"
+
+   `(generate :path [:animal :adjective :animal :animal])`
+   => \"boaconstrictor-emancipatory-ankole-kestrel\"
+
+   `(generate :path [:animal :adjective] :sep \"#\")`
+   => \"coyote#feisty\""
   [& {:keys [path sep]
       :or {path default-path sep "-"}}]
   (->> (for [k path]
