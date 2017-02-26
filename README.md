@@ -25,6 +25,10 @@ Credits for animal and adjective lists go to:
     (generate :path [:adjective :animal :animal :adjective])
     
     => "exportable-indianspinyloach-mealworm-selfindulgent"
+    
+    (generate :path [:adjective :animal :animal :adjective] :sep ".)
+    
+    => "copper.cats.pheasant.flowable"
 ```
 
 ## License
