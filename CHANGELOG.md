@@ -9,6 +9,7 @@
 - `generate` can properly handle keywords, strings, symbols.
 - Putting a string in the `:path` will just return that string.
 - Cleaned up code implementation.
+
 ### 0.3.0 - 26 Feb 2017
 
 - CLJS compatabile.

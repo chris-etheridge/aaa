@@ -33,6 +33,8 @@ Credits for animal and adjective lists go to:
     => "copper.cats.pheasant.flowable"
 ```
 
+Refer to the `generate` docstring for more information and usage.
+
 ## License
 
 Distributed under the Eclipse Public License either version 1.0 or (at
