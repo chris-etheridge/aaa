@@ -1,5 +1,14 @@
 # Change Log
 
+### 0.4.0 - 12 March 2017
+
+- New `generate` function
+- `generate` can now take paths that have `:sep`, strings, or symbols
+- `generate` automatically inserts separators if none are giving in
+  the path.
+- `generate` can properly handle keywords, strings, symbols.
+- Putting a string in the `:path` will just return that string.
+- Cleaned up code implementation.
 ### 0.3.0 - 26 Feb 2017
 
 - CLJS compatabile.
