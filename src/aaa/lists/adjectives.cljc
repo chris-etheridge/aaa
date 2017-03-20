@@ -1,4 +1,5 @@
-(ns aaa.lists.adjectives)
+(ns aaa.lists.adjectives
+  (:refer-clojure :exclude [list]))
 
 (def list
   '("Abaft"

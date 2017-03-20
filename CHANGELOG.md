@@ -1,5 +1,9 @@
 # Change Log
 
+### 0.4.3 - 20 March 2017
+
+- Added `clojure.core/list` exclusions to animals and adjectives list
+
 ### 0.4.2 - 20 March 2017
 
 - Fixed `build` function, again. Don't commit in haste!

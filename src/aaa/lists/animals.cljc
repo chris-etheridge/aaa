@@ -1,4 +1,5 @@
-(ns aaa.lists.animals)
+(ns aaa.lists.animals
+  (:refer-clojure :exclude [list]))
 
 (def list
   '("aardvark"

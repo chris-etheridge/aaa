@@ -1,4 +1,4 @@
-(defproject ether/aaa "0.4.2"
+(defproject ether/aaa "0.4.3"
 
   :description "Adjective-Adjective-Animal from Clojure."
 
