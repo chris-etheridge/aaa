@@ -1,5 +1,9 @@
 # Change Log
 
+### 0.4.2 - 20 March 2017
+
+- Fixed `build` function, again. Don't commit in haste!
+
 ### 0.4.1 - 20 March 2017
 
 - Fixed `build` function using unecessary thread

@@ -33,7 +33,7 @@
 (defn build [final s sep]
   (str final (-> s
                  (generate-word sep)
-                 string/rim
+                 string/trim
                  string/lower-case)))
 
 
