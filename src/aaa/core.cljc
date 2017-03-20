@@ -31,11 +31,10 @@
 
 
 (defn build [final s sep]
-  (str final
-       (-> (-> s
-               (generate-word sep)
-               string/trim
-               string/lower-case))))
+  (str final (-> s
+                 (generate-word sep)
+                 string/rim
+                 string/lower-case)))
 
 
 (defn generate

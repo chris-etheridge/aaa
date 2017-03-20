@@ -1,5 +1,9 @@
 # Change Log
 
+### 0.4.1 - 20 March 2017
+
+- Fixed `build` function using unecessary thread
+
 ### 0.4.0 - 12 March 2017
 
 - New `generate` function
