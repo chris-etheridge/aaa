@@ -1,5 +1,13 @@
 # Change Log
 
+### 0.4.4-2
+
+- Use strings instead of lists for animals and adjective lists
+
+### 0.4.4-1 - 28 March 2017
+
+- Use delay for lists
+
 ### 0.4.3 - 20 March 2017
 
 - Added `clojure.core/list` exclusions to animals and adjectives list
