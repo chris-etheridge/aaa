@@ -19,8 +19,8 @@
 (defn generate-word [k sep]
   (cond
     (keyword? k) (case k
-                   :adjective (rand-nth (shuffle adjectives/list))
-                   :animal    (rand-nth (shuffle animals/list))
+                   :adjective (rand-nth (shuffle @adjectives/list))
+                   :animal    (rand-nth (shuffle @animals/list))
                    :sep       sep
                    (name k))
     (symbol? k)  (name k)
